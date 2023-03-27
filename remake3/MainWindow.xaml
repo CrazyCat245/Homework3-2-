@@ -7,20 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="清除" HorizontalAlignment="Left" Height="45" Margin="57,46,0,0" VerticalAlignment="Top" Width="123"/>
-        <TextBox TextWrapping="Wrap" Height="NaN" Margin="60,147,624,238"/>
-        <TextBlock TextWrapping="Wrap" Text="公分" Margin="60,113,624,288" Height="NaN" Width="NaN"/>
-        <TextBox TextWrapping="Wrap" Height="NaN" Margin="240,147,444,238"/>
-        <TextBlock TextWrapping="Wrap" Text="公尺" Margin="240,113,444,288" Height="NaN" Width="NaN"/>
-        <TextBox TextWrapping="Wrap" Height="NaN" Margin="424,147,260,238"/>
-        <TextBlock TextWrapping="Wrap" Text="公里" Margin="424,113,260,288" Height="NaN" Width="NaN"/>
-        <TextBox TextWrapping="Wrap" Height="NaN" Margin="60,285,624,100"/>
-        <TextBlock TextWrapping="Wrap" Text="英吋" Margin="60,251,624,150" Height="NaN" Width="NaN"/>
-        <TextBox TextWrapping="Wrap" Height="NaN" Margin="240,285,444,100"/>
-        <TextBlock TextWrapping="Wrap" Text="英呎" Margin="240,251,444,150" Height="NaN" Width="NaN"/>
-        <TextBox TextWrapping="Wrap" Height="NaN" Margin="424,290,260,96"/>
-        <TextBlock TextWrapping="Wrap" Text="英哩" Margin="424,256,260,146" Height="NaN" Width="NaN"/>
-        <TextBox TextWrapping="Wrap" Margin="60,370,250,35" Height="NaN" TextChanged="TextBox_TextChanged" Width="NaN"/>
+        <Button x:Name="btnAllClear" Content="清除" HorizontalAlignment="Left" Height="45" Margin="57,46,0,0" VerticalAlignment="Top" Width="123"/>
+        <TextBox x:Name="txtCM" TextWrapping="Wrap" Height="NaN" Margin="60,147,624,238" KeyUp="txtCM_KeyUp"/>
+        <TextBlock TextWrapping="Wrap" Text="公分" Margin="60,101,624,300" Height="NaN" Width="NaN" RenderTransformOrigin="0.494,0.52"/>
+        <TextBox x:Name="txtM" TextWrapping="Wrap" Height="NaN" Margin="240,147,444,238" KeyUp="txtM_KeyUp"/>
+        <TextBlock TextWrapping="Wrap" Text="公尺" Margin="240,96,444,305" Height="NaN" Width="NaN"/>
+        <TextBox x:Name="txtKM" TextWrapping="Wrap" Height="NaN" Margin="424,147,260,238" KeyUp="txtKM_KeyUp"/>
+        <TextBlock TextWrapping="Wrap" Text="公里" Margin="424,101,260,301" Height="NaN" Width="NaN"/>
+        <TextBox x:Name="txtIn" TextWrapping="Wrap" Height="NaN" Margin="60,285,624,100" KeyUp="txtIn_KeyUp"/>
+        <TextBlock TextWrapping="Wrap" Text="英吋" Margin="64,235,620,166" Height="NaN" Width="NaN"/>
+        <TextBox x:Name="txtFt" TextWrapping="Wrap" Height="NaN" Margin="240,285,444,100" KeyUp="txtFt_KeyUp"/>
+        <TextBlock TextWrapping="Wrap" Text="英呎" Margin="240,234,444,167" Height="NaN" Width="NaN"/>
+        <TextBox x:Name="txtYard" TextWrapping="Wrap" Height="NaN" Margin="424,290,260,96" KeyUp="txtYard_KeyUp"/>
+        <TextBlock TextWrapping="Wrap" Text="英哩" Margin="424,235,260,167" Height="NaN" Width="NaN"/>
+        
 
     </Grid>
 </Window>
